@@ -37,9 +37,9 @@ public class Student {
 		return grade;
 	}
 	public void setGrade(int grade) throws InvalidGradeException{
-		//ÇĞ³â °ËÁõ
-		if (grade>4 || grade<1) {
-			String errMessage = String.format("ÇĞ³âÀº 1~4 »çÀÌ¿©¾ß ÇÕ´Ï´Ù.");
+		//í•™ë…„ ê²€ì¦
+		if (grade>4 && grade<1) {
+			String errMessage = String.format("í•™ë…„ì€ 1~4 ì‚¬ì´ì—¬ì•¼ í•©ë‹ˆë‹¤.");
 			throw new InvalidGradeException(errMessage);
 		}
 		this.grade = grade;
