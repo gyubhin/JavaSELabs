@@ -17,8 +17,8 @@ public class Account { //class명은 대문자로 시작
 	//Constructor Overloading(생성자 중복정의)
 	public Account(String custId, String acctId, int balance) {
 		super();
-//		this.custId = custId;
-//		this.acctId = acctId;
+//		this.custId = custId;  -> setCustId에서 하고 있음
+//		this.acctId = acctId;  -> setacctId에서 하고 있음
 		setCustId(custId);
 		setAcctId(acctId);
 		this.balance = balance;

@@ -1,4 +1,3 @@
-
 package mylab.student.control;
 
 import mylab.student.entity.Student;

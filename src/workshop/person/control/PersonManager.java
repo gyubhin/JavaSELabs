@@ -25,10 +25,12 @@ public class PersonManager {
 		personMgr.fillPersons(persons);		
 		
 		personMgr.printTitle("인물정보 조회시스템");
+		System.out.println("======================================================");
 		personMgr.showPerson(persons);		
 		
 		String message = String.format("성별 : %s (은)는   %d 명 입니다.", gender, personMgr.findByGender(persons, gender));
 		System.out.println(message);
+		System.out.println("======================================================");
 		
 		personMgr.showPerson(persons, name);
 		
@@ -39,6 +41,8 @@ public class PersonManager {
 	public void showPerson(PersonEntity[] persons, String name) {
 		for(PersonEntity person : persons) {
 			if(person.getName().equals(name)) {
+				System.out.println("-- 이름 : "+person.getName()+"(으)로 찾은 결과입니다. --");
+				System.out.println("------------------------------------------------------");
 				System.out.println("[이름] " + person.getName());
 				System.out.println("[성별] " + person.getGender());
 				System.out.println("[전화번호] " + person.getPhone());
@@ -62,6 +66,7 @@ public class PersonManager {
 		//for loop를 순회하면서 
 		for(PersonEntity person:persons) {
 			System.out.println("[이름 ] " + person.getName() + "\t [성별] " + person.getGender() + "\t [전화번호] " + person.getPhone());
+			System.out.println("------------------------------------------------------");
 		}
 	}
 
@@ -80,7 +85,6 @@ public class PersonManager {
 	
 	public void printTitle(String title) {
 		System.out.println("@@@@ " + title + " @@@@");
-		System.out.println();
 	}
 
 }
