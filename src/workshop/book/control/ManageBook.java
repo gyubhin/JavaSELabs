@@ -46,6 +46,5 @@ public class ManageBook {
 		}
 		//가격 변경
 		pub.setPrice((int)(pub.getPrice() * rate));
-		
 	}
 }

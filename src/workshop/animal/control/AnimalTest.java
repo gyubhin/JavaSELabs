@@ -28,9 +28,6 @@ public class AnimalTest {
 		//Animal로 부터 상속 받은 메서드
 		cat3.eat();
 		cat3.walk();
-		
-		
-
 	}
 
 }
